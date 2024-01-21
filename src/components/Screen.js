@@ -1,7 +1,7 @@
 import { Textfit } from "react-textfit";
 import "./Screen.css";
 
-const Screen = ({ value }) => {
+export const Screen = ({ value }) => {
   return (
     <Textfit className="screen" mode="single" max={70}>
       {value}
@@ -9,4 +9,3 @@ const Screen = ({ value }) => {
   );
 };
 
-export default Screen;

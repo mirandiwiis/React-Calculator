@@ -1,7 +1,6 @@
 import "./ButtonBox.css";
 
-const ButtonBox = ({ children }) => {
+export const ButtonBox = ({ children }) => {
   return <div className="buttonBox">{children}</div>;
 };
 
-export default ButtonBox;

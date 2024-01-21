@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import Wrapper from "./components/Wrapper";
-import Screen from "./components/Screen";
-import ButtonBox from "./components/ButtonBox";
-import Button from "./components/Button";
+import { Wrapper } from "./components/Wrapper";
+import { Screen } from "./components/Screen";
+import { ButtonBox } from "./components/ButtonBox";
+import { Button } from "./components/Button";
 
 const btnValues = [
   ["C", "+-", "%", "/"],
@@ -18,7 +18,7 @@ const toLocaleString = (num) =>
 
 const removeSpaces = (num) => num.toString().replace(/\s/g, "");
 
-const App = () => {
+export const App = () => {
   let [calc, setCalc] = useState({
     sign: "",
     num: 0,
@@ -157,4 +157,3 @@ const App = () => {
   );
 };
 
-export default App;
